@@ -1,6 +1,7 @@
 # Decentralized Escrow Application
 
-This is an Escrow Dapp built with [Hardhat](https://hardhat.org/).
+Live url [Ox3Escrow](https://651ba5ebc348342ef7c8f638--extraordinary-pudding-368c61.netlify.app/). Dapp
+
 
 ## Project Layout
 

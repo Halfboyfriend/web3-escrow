@@ -175,7 +175,7 @@ function ViewTransaction() {
                 <Card.Content extra>
                   <div className="ui two buttons">
                     {completed ? (
-                      <Button color="red" />
+                      <Button color="red" content="Approved"/>
                     ) : (
                       <Button
                         basic

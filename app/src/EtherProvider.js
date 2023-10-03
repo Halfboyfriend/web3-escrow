@@ -15,9 +15,9 @@ export const etherConnection = async() => {
       });
 
     try{
-  provider = new ethers.providers.Web3Provider(window.ethereum);
-     signer = await provider.getSigner();
-     userAddress = await signer.getAddress();
+      provider = new ethers.providers.Web3Provider(window.ethereum);
+      signer = await provider.getSigner();
+      userAddress = await signer.getAddress();
 
     const factoryInstance = new ethers.Contract(factoryAddress, factoryAbi, provider);
     escrowAddress = await factoryInstance.getDeployedEscrows();
@@ -25,7 +25,7 @@ export const etherConnection = async() => {
 
     } catch(err){
       Swal.fire({
-        text: `${err}`,
+        text: `Connection ${err}`,
         icon: "error",
         padding: "3em",
         color: "#716add",
